@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 4002;
 connectDB();
 await connectCloudinary();
 
-const allowedOrigins = [ "http://localhost:5173" ]
+const allowedOrigins = [ "http://localhost:5173", "https://kitchora-frontend.onrender.com"]
 
 app.post("/stripe", express.raw({ type : "application/json"}), stripeWebhooks);
 
